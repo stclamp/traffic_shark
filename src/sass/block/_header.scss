@@ -2,22 +2,23 @@
   padding: 15px 0;
   &__wrapper {
     display: grid;
-    grid-template-columns: 435px 575px;
+    grid-template-columns: 405px 605px;
     align-items: center;
   }
   &__menu {
     display: grid;
-    grid-template-columns: 271px 238px 145px;
+    grid-template-columns: 301px 253px 160px;
   }
   &__menu-nav {
     display: flex;
     align-items: center;
     position: relative;
+    padding-right: 50px;
     &::after {
       content: "";
       position: absolute;
       right: 0;
-      top: 0;
+      top: 17px;
       transform: translateY(-50%);
       height: 80px;
       width: 1px;
@@ -62,7 +63,7 @@
       content: "";
       position: absolute;
       right: -35px;
-      top: 0;
+      top: 12px;
       transform: translateY(-50%);
       height: 80px;
       width: 1px;

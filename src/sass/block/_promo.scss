@@ -1,0 +1,96 @@
+.promo {
+    background-image: url('../img/promo_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 880px;
+    &__title {
+        font-size: 60px;
+        line-height: 75px;
+        font-weight: 900;
+        color: #fff;
+        text-align: center;
+        padding-top: 171px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        text-align: center;
+        color: #fff;
+        font-size: 20px;
+        line-height: 24px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    &__showing-list {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 151px;
+    }
+    &__showing-item:not(:last-child){
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            width: 2px;
+            height: 150px;
+            background-color:rgba(255, 255, 255, 0.25);
+            bottom: -50px;
+            right: -48px;
+        }
+    }
+    &__showing-number {
+        color: #fff;
+        font-size: 40px;
+        line-height: 49px;
+        font-weight: 800;
+        text-align: center;
+    }
+    &__showing-text {
+        color: #fff;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        text-align: center;
+        margin-left: 8px;
+    }
+    &__goto {
+        background-color: #fff;
+        margin-top: 50px;
+        padding: 58px 50px;
+        box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__webmaster-text, &__advertiser-text {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        text-align: center;
+        width: 437px;
+    }
+    &__webmaster-btn, &__advertiser-btn{
+        background-color: #2E9ADB;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 10px 20px rgba(78, 170, 224, 0.35);
+        margin: 0 auto;
+        margin-top: 32px;
+        padding-left: 47px;
+    }
+    &__advertiser-btn {
+        background-color:#55B570;
+        box-shadow: 0px 10px 20px rgba(85, 181, 112, 0.35);
+    }
+    .arrow-bottom, .arrow-right {
+        padding-left: 47px;
+    }
+}
+
+.promo__ad {
+    background-image: url('../img/promo_ad_bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 880px;
+}

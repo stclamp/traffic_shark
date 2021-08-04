@@ -1,6 +1,8 @@
 @import "lib/fonts";
 @import "base/reset";
 @import "base/vars";
+@import "block/btns";
+@import "block/titles";
 
 * {
   box-sizing: border-box;
@@ -23,4 +25,12 @@ body {
   margin: 0 auto;
 }
 
+.hidden {
+  display: none;
+}
+
 @import "block/header";
+@import "block/promo";
+@import "block/about";
+@import "block/top";
+@import "block/payments";

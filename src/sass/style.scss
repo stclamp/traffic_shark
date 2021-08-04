@@ -1,0 +1,26 @@
+@import "lib/fonts";
+@import "base/reset";
+@import "base/vars";
+
+* {
+  box-sizing: border-box;
+  &::before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  font-family: "Gilroy";
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.container {
+  width: 1090px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+@import "block/header";

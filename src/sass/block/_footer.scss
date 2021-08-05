@@ -1,0 +1,80 @@
+.footer {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__column {
+    display: flex;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 110px;
+    height: 50px;
+  }
+  &__years {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #7e7e7e;
+    font-weight: 500;
+  }
+  &__terms {
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #2e9adb;
+  }
+  &__link {
+    margin-top: 30px;
+    padding-left: 26px;
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1c1c1c;
+    font-weight: 500;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 16px;
+      height: 16px;
+      background-image: url("../img/shevron.png");
+    }
+  }
+  &__social {
+    padding-left: 29px;
+    color: #000;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 19px;
+      height: 19px;
+      background-image: url("../img/email.png");
+    }
+  }
+  &__social-telegram {
+    &::before {
+      background-image: url("../img/telegram.png");
+    }
+  }
+  &__social-skype {
+    margin-bottom: 0;
+    &::before {
+      background-image: url("../img/skype.png");
+    }
+  }
+}

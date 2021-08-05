@@ -1,45 +1,46 @@
 .top {
-    background-image: url('../img/top_bg.png');
-    background-position-y: -116px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: 50px;
-    min-height: 100vh;
-    &__title {
-        padding-top: 155px;
-        color: #fff;
-    }
-    &__subtitle {
-        text-align: center;
-        color: #fff;
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 500;
-        margin: 0 auto;
-        margin-top: 20px;
-        width: 730px;
-    }
-    &__wrapper {
-        display: flex;
-        justify-content: center;
-        margin-top: 80px;
-    }
-    &__card {
-        width: 350px;
-        margin-right: 30px;
-    }
-    &__card:last-child{
-        margin-right: 0;
-    }
-    &__heading {
-        margin: 0 auto;
-    }
-    &__text {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 700;
-        color: #fff;
-        text-align: center;
-        margin-top: 30px;
-    }
+  background-image: url("../img/top_bg.png");
+  background-position-y: center;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 50px;
+  min-height: 880px;
+  &__title {
+    padding-top: 155px;
+    color: #fff;
+  }
+  &__subtitle {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 730px;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  &__card {
+    width: 350px;
+    margin-right: 30px;
+  }
+  &__card:last-child {
+    margin-right: 0;
+  }
+  &__heading {
+    margin: 0 auto;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+  }
 }

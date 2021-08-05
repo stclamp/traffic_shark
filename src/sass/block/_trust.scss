@@ -1,0 +1,26 @@
+.trust {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  &__icons {
+    margin-top: 89px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  &__icon {
+    margin-right: 50px;
+    margin-bottom: 64px;
+    height: 40px;
+  }
+  &__subtitle {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    color: #939393;
+  }
+}
+
+.trust__ad {
+  padding-top: 0;
+}

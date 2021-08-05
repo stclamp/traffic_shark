@@ -22,6 +22,8 @@ window.addEventListener('DOMContentLoaded', () => {
         tabAdBtn = document.querySelector('.header__menu-link--ad'),
         promoAdBtn = document.getElementById('promo__adv'),
         promoWebBtn = document.getElementById('promo__web'),
+        footerAdBtn = document.getElementById('footer__ad'),
+        footerWebBtn = document.getElementById('footer__web');
         webContent = document.querySelector('.web'),
         adContent = document.querySelector('.ad');
 
@@ -50,5 +52,25 @@ window.addEventListener('DOMContentLoaded', () => {
     promoAdBtn.addEventListener('click', showAdTab);
 
     promoWebBtn.addEventListener('click', showWebTab);
+
+    footerAdBtn.addEventListener('click', showAdTab);
+
+    footerWebBtn.addEventListener('click', showWebTab);
+
+    //smooth scroll
+
+    const smoothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+    smoothScrollElems.forEach(link => {
+        link.addEventListener('click', (event) => {
+
+            event.preventDefault();
+            const id = link.getAttribute('href').substring(1);
+            
+
+            document.getElementById(id).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
 
 })

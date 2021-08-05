@@ -1,30 +1,30 @@
 .payments {
-    padding-top: 86px;
-    padding-bottom: 82px;
-    &__title {
-        span {
-            color: #2E9ADB;
-        }
+  // padding-top: 86px;
+  padding-bottom: 82px;
+  &__title {
+    span {
+      color: #2e9adb;
     }
-    &__subtitle {
-        font-size: 20px;
-        line-height: 24px;
-        font-weight: 500;
-        text-align: center;
-        margin-top: 20px;
-        color:#939393
-    }
-    &__icons {
-        margin-top: 88px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .webmoney {
-        width: 160px;
-        height: 42px;
-    }
-    &__icon:not(:last-child) {
-        margin-right: 30px;
-    }
+  }
+  &__subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    color: #939393;
+  }
+  &__icons {
+    margin-top: 88px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .webmoney {
+    width: 160px;
+    height: 42px;
+  }
+  &__icon:not(:last-child) {
+    margin-right: 30px;
+  }
 }

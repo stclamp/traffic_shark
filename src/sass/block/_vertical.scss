@@ -1,0 +1,32 @@
+.vertical {
+  padding-top: 82px;
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 80px;
+  }
+  &__card {
+    background-image: url("../img/vertical_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -80px;
+    min-height: 350px;
+    width: 350px;
+    padding: 40px;
+    box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+  }
+  &__card-title {
+    margin-top: 87px;
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 900;
+  }
+  &__card-text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 300;
+  }
+}

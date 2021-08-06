@@ -24,7 +24,7 @@ window.addEventListener('DOMContentLoaded', () => {
         promoWebBtn = document.getElementById('promo__web'),
         footerAdBtn = document.getElementById('footer__ad'),
         footerWebBtn = document.getElementById('footer__web');
-        webContent = document.querySelector('.web'),
+    webContent = document.querySelector('.web'),
         adContent = document.querySelector('.ad');
 
     function showAdTab(e) {
@@ -59,18 +59,33 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //smooth scroll
 
-    const smoothScrollElems = document.querySelectorAll('a[href^="#"]:not(a[href="#"])');
+    const smoothScrollElems = document.querySelectorAll('a[href^="#"]');
     smoothScrollElems.forEach(link => {
         link.addEventListener('click', (event) => {
 
             event.preventDefault();
             const id = link.getAttribute('href').substring(1);
-            
+
 
             document.getElementById(id).scrollIntoView({
                 behavior: 'smooth'
             });
         });
     });
+
+    //accordion 
+
+    const activityBtn = document.querySelector('.activity__block-img');
+    const activityImgDown = document.querySelector('.activity__img-down');
+    const activityImgDoUp = document.querySelector('.activity__img-up');
+    const activityContent = document.querySelector('.activity__content');
+
+
+
+    activityBtn.addEventListener('click', () => {
+        activityImgDown.classList.toggle('hidden');
+        activityImgDoUp.classList.toggle('hidden');
+        activityContent.classList.toggle('hidden');
+    })
 
 })

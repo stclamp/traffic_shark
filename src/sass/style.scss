@@ -29,6 +29,32 @@ body {
   display: none;
 }
 
+@keyframes sweep {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes sweep-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.accord {
+  animation: sweep 0.5s ease-in-out;
+}
+
+.accord-out {
+  animation: sweep-out 0.5s ease-in-out;
+}
+
 @import "block/header";
 @import "block/promo";
 @import "block/about";

@@ -75,17 +75,17 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //accordion 
 
-    const activityBtn = document.querySelector('.activity__block-img');
-    const activityImgDown = document.querySelector('.activity__img-down');
-    const activityImgDoUp = document.querySelector('.activity__img-up');
-    const activityContent = document.querySelector('.activity__content');
+    const activityBtn = document.querySelectorAll('.activity__block-img');
+    const activityImgDown = document.querySelectorAll('.activity__img-down');
+    const activityImgDoUp = document.querySelectorAll('.activity__img-up');
+    const activityContent = document.querySelectorAll('.activity__content');
 
-
-
-    activityBtn.addEventListener('click', () => {
-        activityImgDown.classList.toggle('hidden');
-        activityImgDoUp.classList.toggle('hidden');
-        activityContent.classList.toggle('hidden');
+    activityBtn.forEach((btn, i) => {
+        btn.addEventListener('click', () => {
+            activityImgDown[i].classList.toggle('hidden');
+            activityImgDoUp[i].classList.toggle('hidden');
+            activityContent[i].classList.toggle('hidden');
+        });
     })
 
 })

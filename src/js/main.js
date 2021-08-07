@@ -23,9 +23,15 @@ window.addEventListener('DOMContentLoaded', () => {
         promoAdBtn = document.getElementById('promo__adv'),
         promoWebBtn = document.getElementById('promo__web'),
         footerAdBtn = document.getElementById('footer__ad'),
-        footerWebBtn = document.getElementById('footer__web');
-    webContent = document.querySelector('.web'),
-        adContent = document.querySelector('.ad');
+        footerWebBtn = document.getElementById('footer__web'),
+        webContent = document.querySelector('.web'),
+        adContent = document.querySelector('.ad'),
+        authBtn = document.querySelector('.header__menu-link--login'),
+        checkinBtn = document.querySelector('.header__menu-link--checkin'),
+        checkin = document.querySelector('.checkin'),
+        auth = document.querySelector('.auth');
+
+
 
     function showAdTab(e) {
         e.preventDefault();
@@ -45,9 +51,34 @@ window.addEventListener('DOMContentLoaded', () => {
         adContent.classList.add('hidden');
     }
 
+    function showAuth(e) {
+        e.preventDefault();
+
+        adContent.classList.add('hidden');
+        webContent.classList.add('hidden');
+        tabAdBtn.classList.remove('header__menu-ad--active');
+        tabWebBtn.classList.remove('header__menu-web--active');
+        auth.classList.remove('hidden');
+    }
+
+    function showCheckin(e) {
+        e.preventDefault();
+
+        adContent.classList.add('hidden');
+        webContent.classList.add('hidden');
+        auth.classList.add('hidden');
+        tabAdBtn.classList.remove('header__menu-ad--active');
+        tabWebBtn.classList.remove('header__menu-web--active');
+        checkin.classList.remove('hidden');
+    }
+
     tabAdBtn.addEventListener('click', showAdTab);
 
     tabWebBtn.addEventListener('click', showWebTab);
+
+    authBtn.addEventListener('click', showAuth);
+
+    checkinBtn.addEventListener('click', showCheckin);
 
     promoAdBtn.addEventListener('click', showAdTab);
 

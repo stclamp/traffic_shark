@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Traffic Shark</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.min.css">
@@ -24,7 +24,7 @@
                         <!--header__menu-ad--active-->
                     </nav>
                     <div class="header__menu-login">
-                        <a class="header__menu-link header__menu-link--login" href="#">вход</a>
+                        <a class="header__menu-link header__menu-link--login" href="login.html">вход</a>
                         <a class="header__menu-link header__menu-link--checkin" href="#">регистрация</a>
                     </div>
                     <div class="header__menu-lang">
@@ -250,7 +250,7 @@
                 </div>
             </footer>
         </div>
-        <div class="ad accord">
+        <div class="ad accord hidden" id="ad">
             <section class="promo promo__ad">
                 <div class="container">
                     <h1 class="promo__title">разработка и продвижение мобильных приложений</h1>
@@ -499,9 +499,11 @@
                             <img src="img/content-dashed-border.png" alt="" class="content__dashed-border">
                             <h4 class="activity__content-title">Преимущества</h4>
                             <ul class="activity__content-list">
-                                <li class="activity__content-item">Сильный inhouse медиабаинг из более чем 10 человек</li>
+                                <li class="activity__content-item">Сильный inhouse медиабаинг из более чем 10 человек
+                                </li>
                                 <li class="activity__content-item">Проверенный траффик высокого качества</li>
-                                <li class="activity__content-item">Понимание потребностей клиента, опираясь на опыт продвижения собственных продуктов</li>
+                                <li class="activity__content-item">Понимание потребностей клиента, опираясь на опыт
+                                    продвижения собственных продуктов</li>
                                 <li class="activity__content-item">Собственное производство промо-материалов</li>
                                 <li class="activity__content-item">Никакого фрода и ботов</li>
                                 <li class="activity__content-item">Интеграции с Adjust, Appsflyer и др. трекерами</li>
@@ -523,7 +525,7 @@
                             <div class="activity__content-platforms">
                                 <div class="activity__content-platform">
                                     <div class="activity__content-logo">
-                                        <img class="activity__content-platform--logo" src="img/ios.png" alt="android" >
+                                        <img class="activity__content-platform--logo" src="img/ios.png" alt="android">
                                         <h5 class="activity__content-platform--logotitle">IOS</h5>
                                     </div>
                                     <div class="activity__content-platform--stack">
@@ -533,7 +535,8 @@
                                 </div>
                                 <div class="activity__content-platform">
                                     <div class="activity__content-logo">
-                                        <img class="activity__content-platform--logo" src="img/android.png" alt="android" >
+                                        <img class="activity__content-platform--logo" src="img/android.png"
+                                            alt="android">
                                         <h5 class="activity__content-platform--logotitle">Android</h5>
                                     </div>
                                     <div class="activity__content-platform--stack">
@@ -544,16 +547,20 @@
                             </div>
                             <img src="img/content-dashed-border.png" alt="" class="content__dashed-border">
                             <h4 class="activity__content-title">Полный цикл разработки</h4>
-                            <h5 class="activity__block-subtitle">От идеи, прототипа, дизайна и технического задания до публикации и поддержки приложения!</h5>
-                            <img class="activity__content-connect" src="img/connect.png" alt="" >
-                            <h5 class="activity__content-subtitle">Так же мы успешно разрабатываем свои IOS | Android приложения, поэтому мы отлично понимаем, что необходимо нашим партнерам</h5>
+                            <h5 class="activity__block-subtitle">От идеи, прототипа, дизайна и технического задания до
+                                публикации и поддержки приложения!</h5>
+                            <img class="activity__content-connect" src="img/connect.png" alt="">
+                            <h5 class="activity__content-subtitle">Так же мы успешно разрабатываем свои IOS | Android
+                                приложения, поэтому мы отлично понимаем, что необходимо нашим партнерам</h5>
                             <img src="img/content-dashed-border.png" alt="" class="content__dashed-border">
                             <h4 class="activity__content-title">наши продукты</h4>
                             <div class="activity__content-products">
                                 <div class="activity__content-product">
-                                    <img class="activity__content-platform--img" src="img/android-small.png" alt="android">
+                                    <img class="activity__content-platform--img" src="img/android-small.png"
+                                        alt="android">
                                     <div class="activity__content-app">
-                                        <img class="activity__content-logo" src="img/ghost-cleaner.png" alt="ghost-cleaner">
+                                        <img class="activity__content-logo" src="img/ghost-cleaner.png"
+                                            alt="ghost-cleaner">
                                         <h5 class="activity__content-product--title">Ghost Cleaner</h5>
                                     </div>
                                 </div>
@@ -574,19 +581,23 @@
                                 <div class="activity__content-product">
                                     <img class="activity__content-platform--img" src="img/ios-small.png" alt="android">
                                     <div class="activity__content-app">
-                                        <img class="activity__content-logo" src="img/screen-defender.png" alt="Screen Defender">
+                                        <img class="activity__content-logo" src="img/screen-defender.png"
+                                            alt="Screen Defender">
                                         <h5 class="activity__content-product--title">Screen Defender</h5>
                                     </div>
                                 </div>
                                 <div class="activity__content-product">
-                                    <img class="activity__content-platform--img" src="img/android-small.png" alt="android">
+                                    <img class="activity__content-platform--img" src="img/android-small.png"
+                                        alt="android">
                                     <div class="activity__content-app">
-                                        <img class="activity__content-logo" src="img/mafia.png" alt="Idle Mafia Clicker">
+                                        <img class="activity__content-logo" src="img/mafia.png"
+                                            alt="Idle Mafia Clicker">
                                         <h5 class="activity__content-product--title">Idle Mafia Clicker</h5>
                                     </div>
                                 </div>
                                 <div class="activity__content-product">
-                                    <img class="activity__content-platform--img" src="img/android-small.png" alt="android">
+                                    <img class="activity__content-platform--img" src="img/android-small.png"
+                                        alt="android">
                                     <div class="activity__content-app">
                                         <img class="activity__content-logo" src="img/coin-lord.png" alt="Coin Lord">
                                         <h5 class="activity__content-product--title">Coin Lord</h5>
@@ -595,7 +606,8 @@
                                 <div class="activity__content-product">
                                     <img class="activity__content-platform--img" src="img/ios-small.png" alt="android">
                                     <div class="activity__content-app">
-                                        <img class="activity__content-logo" src="img/filters.png" alt="Filters.Pro Photo editor">
+                                        <img class="activity__content-logo" src="img/filters.png"
+                                            alt="Filters.Pro Photo editor">
                                         <h5 class="activity__content-product--title">Filters.Pro<br>
                                             Photo editor</h5>
                                     </div>
@@ -610,8 +622,10 @@
                                 <div class="activity__content-product">
                                     <img class="activity__content-platform--img" src="img/ios-small.png" alt="android">
                                     <div class="activity__content-app">
-                                        <img class="activity__content-logo" src="img/vpn-pro.png" alt="VPN PRO - Anonymity & Secure">
-                                        <h5 class="activity__content-product--title">VPN PRO -<br>Anonymity & Secure</h5>
+                                        <img class="activity__content-logo" src="img/vpn-pro.png"
+                                            alt="VPN PRO - Anonymity & Secure">
+                                        <h5 class="activity__content-product--title">VPN PRO -<br>Anonymity & Secure
+                                        </h5>
                                     </div>
                                 </div>
                                 <div class="activity__content-product">
@@ -636,26 +650,35 @@
                             <img src="img/shevron-up.png" alt="" class="activity__img activity__img-up hidden">
                         </div>
                         <div class="activity__content accord hidden">
-                            <h4 class="activity__content-title">продвижение мобильных приложений в apple app store и google play</h4>
+                            <h4 class="activity__content-title">продвижение мобильных приложений в apple app store и
+                                google play</h4>
                             <div class="activity__content-aso--blocks">
                                 <div class="activity__content-aso--block">
                                     <img src="img/loupe.png" alt="" class="activity__content-aso--img">
-                                    <p class="activity__content-aso--text">Повышаем позиции вашего приложения в выдаче при поиске внутри магазинов приложений по заданным ключевым фразам</p>
+                                    <p class="activity__content-aso--text">Повышаем позиции вашего приложения в выдаче
+                                        при поиске внутри магазинов приложений по заданным ключевым фразам</p>
                                 </div>
                                 <div class="activity__content-aso--block">
                                     <img src="img/tap.png" alt="" class="activity__content-aso--img">
-                                    <p class="activity__content-aso--text">Использование различных подходов и зание алгоритмов работы магазинов приложений от Google и Apple позволяет нам точно определить, какие изменения в метаданных нужно сделать, чтобы обеспечить рост органических установок, видимости и конверсий  для вашего приложения</p>
+                                    <p class="activity__content-aso--text">Использование различных подходов и зание
+                                        алгоритмов работы магазинов приложений от Google и Apple позволяет нам точно
+                                        определить, какие изменения в метаданных нужно сделать, чтобы обеспечить рост
+                                        органических установок, видимости и конверсий для вашего приложения</p>
                                 </div>
                             </div>
                             <img src="img/content-dashed-border.png" alt="" class="content__dashed-border">
                             <h4 class="activity__content-title">наши успехи</h4>
-                            <p class="activity__content-aso--subtitle">Мы смогли вывести наши собственные приложения в ТОП-10 среди категорий утилитит в USA, в ТОП-15 среди утилит CA и UK, а так же в ТОП-15 среди TIER-3</p>
+                            <p class="activity__content-aso--subtitle">Мы смогли вывести наши собственные приложения в
+                                ТОП-10 среди категорий утилитит в USA, в ТОП-15 среди утилит CA и UK, а так же в ТОП-15
+                                среди TIER-3</p>
                             <a href="#" class="btn about__btn">Связаться</a>
                         </div>
                     </div>
 
-                    <h4 class="activity__content-title activity__content-title--mt"> хотите предложить нам участие в тендере?</h4>
-                    <h3 class="activity__content-subtitle--after">пишите на почту <span>partners@trafficshark.pro</span></h3>
+                    <h4 class="activity__content-title activity__content-title--mt"> хотите предложить нам участие в
+                        тендере?</h4>
+                    <h3 class="activity__content-subtitle--after">пишите на почту <span>partners@trafficshark.pro</span>
+                    </h3>
                 </div>
             </section>
             <section class="feedback feedback-ad">
@@ -691,6 +714,26 @@
                     </div>
                 </div>
             </footer>
+        </div>
+        <div class="auth accord hidden">
+            <div class="container">
+                <h2 class="title auth__title">авторизоваться</h2>
+                <form action="#" class="auth__form">
+                    <input type="email" class="auth__input">
+                    <input type="password" class="auth__input">
+                    <button class="btn auth__btn">войти <img src="" alt=""> </button>
+                </form>
+            </div>
+        </div>
+        <div class="checkin accord hidden">
+            <div class="container">
+                <h2 class="title checkin__title">Регистрация</h2>
+                <form action="#" class="checkin__form">
+                    <input type="email" class="checkin__input">
+                    <input type="password" class="checkin__input">
+                    <button class="btn checkin__btn">войти <img src="" alt=""> </button>
+                </form>
+            </div>
         </div>
     </main>
 

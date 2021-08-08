@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traffic Shark</title>
+    <title>Traffic Shark - Веб-мастерам</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="css/style.min.css">
@@ -15,7 +15,7 @@
     <header class="header">
         <div class="container">
             <div class="header__wrapper">
-                <img class="header__logo" src="img/logo.png" alt="Logo">
+                <a href="#" class="header__logo-link"><img class="header__logo" src="img/logo.png" alt="Logo"></a>
                 <div class="header__menu">
                     <nav class="header__menu-nav">
                         <a class="header__menu-link header__menu-link--web header__menu-web--active"
@@ -677,7 +677,7 @@
 
                     <h4 class="activity__content-title activity__content-title--mt"> хотите предложить нам участие в
                         тендере?</h4>
-                    <h3 class="activity__content-subtitle--after">пишите на почту <span>partners@trafficshark.pro</span>
+                    <h3 class="activity__content-subtitle--after">пишите на почту <a href="mailto:partners@trafficshark.pro">partners@trafficshark.pro</a>
                     </h3>
                 </div>
             </section>
@@ -716,22 +716,72 @@
             </footer>
         </div>
         <div class="auth accord hidden">
-            <div class="container">
+            <div class="container__mini">
                 <h2 class="title auth__title">авторизоваться</h2>
                 <form action="#" class="auth__form">
-                    <input type="email" class="auth__input">
-                    <input type="password" class="auth__input">
-                    <button class="btn auth__btn">войти <img src="" alt=""> </button>
+                    <input type="email" class="auth__input" placeholder="E-mail">
+                    <input type="password" class="auth__input" placeholder="Пароль">
+                    <button class="btn auth__btn">войти <img src="img/auth_arrow_right.png" alt=""></button>
                 </form>
+                <p class="auth__remember"><span id="bg"><span id="marker" class="accord"></span></span> Запомнить меня</p>
+                <div class="auth__links">
+                    <a href="#" class="auth__link">Забыли пароль?</a>
+                    <a href="#" class="auth__link">Создать аккаунт</a>
+                </div>
             </div>
         </div>
         <div class="checkin accord hidden">
-            <div class="container">
+            <div class="container__midi">
                 <h2 class="title checkin__title">Регистрация</h2>
                 <form action="#" class="checkin__form">
-                    <input type="email" class="checkin__input">
-                    <input type="password" class="checkin__input">
-                    <button class="btn checkin__btn">войти <img src="" alt=""> </button>
+                    <div class="checkin__inputs">
+                        <input type="email" class="checkin__input checkin__input-long" placeholder="E-mail">
+                        <input type="password" class="checkin__input" placeholder="Пароль">
+                        <input type="password" class="checkin__input" placeholder="Повторите пароль">
+                        <input type="text" class="checkin__input" placeholder="Skype">
+                        <input type="text" class="checkin__input" placeholder="Telegram"> 
+                    </div>
+                    <h4 class="checkin__subtitle">С чем вы работаете:</h4>
+                    <div class="checkin__checkboxes">
+                        <div>
+                            <span class="checkin__checkbox" id="cpi"></span>
+                            <label for="cpi" class="checkin__checkbox-label">CPI</label>
+                        </div>
+                        <div>
+                            <span class="checkin__checkbox" id="Gambling"></span>
+                            <label for="Gambling" class="checkin__checkbox-label">Gambling</label>
+                        </div>
+                        <div>
+                            <span class="checkin__checkbox" id="Betting"></span>
+                            <label for="Betting" class="checkin__checkbox-label">Betting</label>
+                        </div>
+                        <div>
+                            <span class="checkin__checkbox" id="Crypto"></span>
+                            <label for="Crypto" class="checkin__checkbox-label">Crypto</label>
+                        </div>
+                        <div>
+                            <span  class="checkin__checkbox" id="Datinges"></span>
+                            <label for="Datinges" class="checkin__checkbox-label">Datinges</label>
+                        </div>
+                        <div>
+                            <span class="checkin__checkbox" id="Sweepstakes"></span>
+                            <label for="Sweepstakes" class="checkin__checkbox-label">Sweepstakes</label>
+                        </div>
+                        <div>
+                            <span class="checkin__checkbox" id="CC-submits"></span>
+                            <label for="CC-submits" class="checkin__checkbox-label">CC-submits</label>
+                        </div>
+                        <div>
+                            <span class="checkin__checkbox" id="Other"></span>
+                            <label for="Other" class="checkin__checkbox-label">Other</label>
+                        </div>
+                    </div>
+                    <input type="text" class="checkin__input checkin__input-long" placeholder="Какой трафик вы используете? ">
+                    <div class="checkin__agree">
+                        <span class="checkin__checkbox" id="checkin__agree-span"></span>
+                        <p class="checkin__agree-text">I agree with <a href="#" class="checkin__agree-link">terms and conditions</a></p>
+                    </div>
+                    <button class="btn checkin__btn">зарегистрироваться <img src="" alt=""> </button>
                 </form>
             </div>
         </div>

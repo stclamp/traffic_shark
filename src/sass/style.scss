@@ -25,8 +25,23 @@ body {
   margin: 0 auto;
 }
 
+.container__mini {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.container__midi {
+  width: 730px;
+  margin: 0 auto;
+}
+
 .hidden {
   display: none;
+}
+
+.marker {
+  right: -20px;
+  border: 2px solid green !important;
 }
 
 @keyframes sweep {
@@ -64,4 +79,14 @@ body {
 @import "block/trust";
 @import "block/feedback";
 @import "block/activity";
+@import "block/auth";
+@import "block/checkin";
 @import "block/footer";
+
+.checked {
+  background: #0b76ef;
+  background-image: url("../img/check.svg");
+  transition: all 0.2s ease-in-out;
+}
+
+@import "block/media";

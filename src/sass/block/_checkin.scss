@@ -1,0 +1,121 @@
+.checkin {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url("../img/checkin_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  //   background-position: top center;
+  &__title {
+    color: #fff;
+  }
+  &__form {
+    margin-top: 40px;
+  }
+  &__inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__input,
+  &__input:focus {
+    background: #ffffff;
+    border-radius: 40px;
+    border: none;
+    width: 350px;
+    border: none;
+    padding: 30px;
+    margin-bottom: 30px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+
+    &::placeholder {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 24px;
+      color: rgba(126, 126, 126, 0.5);
+    }
+  }
+  &__input:focus {
+    box-shadow: 0 0 8pt 3pt #0b76ef;
+  }
+  &__input-long,
+  &__input-long:focus {
+    width: 730px;
+    box-shadow: none;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &__input-long:focus {
+    box-shadow: 0 0 8pt 3pt #0b76ef;
+  }
+  &__subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  }
+  &__checkboxes {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+    div {
+      width: 226px;
+      margin-right: 15px;
+      display: flex;
+      cursor: pointer;
+    }
+  }
+  &__checkbox {
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    // opacity: 0;
+    margin-bottom: 20px;
+  }
+  &__checkbox-label {
+    position: relative;
+    color: #fff;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 500;
+    margin-right: 30px;
+    margin-top: 4px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  &__agree {
+    margin-top: 40px;
+    display: flex;
+    cursor: pointer;
+  }
+  &__agree-text {
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 13px;
+    line-height: 24px;
+    color: #fff;
+    font-weight: 500;
+  }
+  &__agree-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+  &__btn {
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 3px solid #fff;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+      background: transparent;
+    }
+  }
+}

@@ -1,0 +1,101 @@
+@media (max-width: 1200px) {
+  .container {
+    width: 960px;
+  }
+  .header {
+    &__wrapper {
+      grid-template-columns: 312px 414px;
+    }
+  }
+  .vertical {
+    &__cards {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+  }
+  .feedback {
+    background-size: auto;
+    background-position: center;
+  }
+  .activity {
+    &__content-cards {
+      width: auto;
+      margin-right: 0;
+    }
+    &__content-card {
+      margin-right: 15px;
+      margin-left: 15px;
+    }
+    &__case-traffic::after {
+      right: -85px;
+    }
+    &__case-costs::after {
+      right: -95px;
+    }
+    &__case-traffic--stoloto::after {
+      right: -11px;
+    }
+    &__case-costs--stoloto::after {
+      right: -55px;
+    }
+    &__case-traffic--vpn-pro::after {
+      right: -58px;
+    }
+    &__case-costs--vpn-pro::after {
+      right: -85px;
+    }
+    &__case-traffic--ultima::after {
+      right: -2px;
+    }
+    &__content-products {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 720px;
+  }
+  .header {
+    &__wrapper {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__menu {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    &__menu-nav {
+      position: absolute;
+      left: 58%;
+      padding-left: 248px;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      transform: translatex(-50%);
+      top: 79px;
+      background: #fff;
+      width: 116%;
+    }
+    &__menu-ad--active::before,
+    &__menu-web--active::before {
+      display: none;
+    }
+    &__menu-login {
+      margin: 0 89px;
+      width: 100%;
+    }
+    &__menu-login::after {
+      display: none;
+    }
+    &__menu-nav::after {
+      display: none;
+    }
+  }
+  .promo {
+    &__showing-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      gap: 40px;
+    }
+  }
+}

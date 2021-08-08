@@ -29,40 +29,40 @@ window.addEventListener('DOMContentLoaded', () => {
         authBtn = document.querySelector('.header__menu-link--login'),
         checkinBtn = document.querySelector('.header__menu-link--checkin'),
         checkin = document.querySelector('.checkin'),
+        logoLink = document.querySelector('.header__logo-link'),
         auth = document.querySelector('.auth');
 
 
-
-    function showAdTab(e) {
-        e.preventDefault();
+    function showAdTab() {
 
         tabAdBtn.classList.add('header__menu-ad--active');
         tabWebBtn.classList.remove('header__menu-web--active');
         webContent.classList.add('hidden');
+        auth.classList.add('hidden');
+        checkin.classList.add('hidden');
         adContent.classList.remove('hidden');
     }
 
-    function showWebTab(e) {
-        e.preventDefault();
+    function showWebTab() {
 
         tabAdBtn.classList.remove('header__menu-ad--active');
         tabWebBtn.classList.add('header__menu-web--active');
         webContent.classList.remove('hidden');
+        auth.classList.add('hidden');
+        checkin.classList.add('hidden');
         adContent.classList.add('hidden');
     }
 
-    function showAuth(e) {
-        e.preventDefault();
-
+    function showAuth() {
         adContent.classList.add('hidden');
         webContent.classList.add('hidden');
         tabAdBtn.classList.remove('header__menu-ad--active');
         tabWebBtn.classList.remove('header__menu-web--active');
+        checkin.classList.add('hidden');
         auth.classList.remove('hidden');
     }
 
-    function showCheckin(e) {
-        e.preventDefault();
+    function showCheckin() {
 
         adContent.classList.add('hidden');
         webContent.classList.add('hidden');
@@ -72,21 +72,68 @@ window.addEventListener('DOMContentLoaded', () => {
         checkin.classList.remove('hidden');
     }
 
-    tabAdBtn.addEventListener('click', showAdTab);
+    tabAdBtn.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    tabWebBtn.addEventListener('click', showWebTab);
+        showAdTab();
+        document.title = 'Traffic Shark. Рекламодателям';
+    });
 
-    authBtn.addEventListener('click', showAuth);
+    tabWebBtn.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    checkinBtn.addEventListener('click', showCheckin);
+        showWebTab();
+        document.title = 'Traffic Shark. Веб-мастерам';
+    });
 
-    promoAdBtn.addEventListener('click', showAdTab);
+    logoLink.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    promoWebBtn.addEventListener('click', showWebTab);
+        showWebTab();
+        document.title = 'Traffic Shark. Веб-мастерам';
+    })
 
-    footerAdBtn.addEventListener('click', showAdTab);
+    authBtn.addEventListener('click', (e) => {
+        e.preventDefault();
 
-    footerWebBtn.addEventListener('click', showWebTab);
+        showAuth();
+        document.title = 'Авторизоваться';
+    });
+
+    checkinBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        showCheckin();
+        document.title = 'Зарегистрироваться';
+    });
+
+    promoAdBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        showAdTab();
+        document.title = 'Traffic Shark. Рекламодателям';
+    });
+
+    promoWebBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        showWebTab();
+        document.title = 'Traffic Shark. Веб-мастерам';
+    });
+
+    footerAdBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        showAdTab();
+        document.title = 'Traffic Shark. Рекламодателям';
+    });
+
+    footerWebBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        showWebTab();
+        document.title = 'Traffic Shark. Веб-мастерам';
+    });
 
     //smooth scroll
 
@@ -117,6 +164,37 @@ window.addEventListener('DOMContentLoaded', () => {
             activityImgDoUp[i].classList.toggle('hidden');
             activityContent[i].classList.toggle('hidden');
         });
+    });
+
+    //remember marker 
+
+    const remember = document.querySelector('.auth__remember'),
+        marker = document.getElementById('marker');
+
+
+    remember.addEventListener('click', () => {
+        marker.classList.toggle('marker');
+
+    });
+
+    //checkboxes 
+
+    const checkboxItem = document.querySelectorAll('.checkin__checkboxes div'),
+        checkbox = document.querySelectorAll('.checkin__checkbox'),
+        agree = document.querySelector('.checkin__agree'),
+        agreeSpan = document.getElementById('checkin__agree-span');
+
+    checkboxItem.forEach((item, i) => {
+        item.addEventListener('click', () => {
+            checkbox[i].classList.toggle('checked');
+
+        });
+    });
+
+    agree.addEventListener('click', () => {
+        agreeSpan.classList.toggle('checked');
     })
+
+    
 
 })

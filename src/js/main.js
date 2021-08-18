@@ -30,6 +30,7 @@ window.addEventListener('DOMContentLoaded', () => {
         checkinBtn = document.querySelector('.header__menu-link--checkin'),
         checkin = document.querySelector('.checkin'),
         logoLink = document.querySelector('.header__logo-link'),
+        checkinFromAuth = document.getElementById('register')
         auth = document.querySelector('.auth');
 
 
@@ -134,6 +135,13 @@ window.addEventListener('DOMContentLoaded', () => {
         showWebTab();
         document.title = 'Traffic Shark. Веб-мастерам';
     });
+
+    checkinFromAuth.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        showCheckin();
+        document.title = 'Зарегистрироваться';
+    })
 
     //smooth scroll
 

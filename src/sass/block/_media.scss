@@ -74,9 +74,15 @@
       background: #fff;
       width: 100%;
     }
-    &__menu-ad--active::before,
+    // &__menu-ad--active::before,
+    // &__menu-web--active::before {
+    //   display: none;
+    // }
+    &__menu-ad--active::before {
+      top: -20px;
+    }
     &__menu-web--active::before {
-      display: none;
+      top: -20px;
     }
     &__menu-login {
       margin: 0 89px;
@@ -339,6 +345,7 @@
     &__menu-nav {
       padding-left: 33px;
       width: 100%;
+      top: 65px;
     }
     &__logo-link {
       width: 78px;
@@ -408,6 +415,73 @@
       padding-left: 36px;
     }
   }
+  .promo__ad {
+    .promo__showing-item:first-child::after {
+      right: -31px;
+    }
+  }
+  .activity {
+    &__block {
+      padding: 16px;
+    }
+    &__block-title {
+      font-size: 30px;
+    }
+    &__block-subtitle {
+      font-size: 13px;
+    }
+    &__block-img::after,
+    &__block-img::before {
+      width: 75px;
+    }
+    &__block-img {
+      width: 48px;
+      height: 48px;
+    }
+    &__block-img::before {
+      right: 64px;
+    }
+    &__block-img::after {
+      left: 64px;
+    }
+    &__case-traffic::after,
+    &__case-costs::after {
+      height: 237px;
+      top: -20px;
+    }
+    &__case-indicators--subtitle {
+      width: 210px;
+      font-size: 16px;
+    }
+    &__content-platforms {
+      flex-wrap: wrap;
+    }
+    &__content-platform {
+      margin-right: 0;
+    }
+    &__content-platform:last-child {
+      margin-top: 16px;
+    }
+    &__content-logo::after {
+      height: 237px;
+      bottom: -166px;
+    }
+    &__content-products {
+      grid-template-columns: 1fr;
+    }
+    &__content-aso--blocks {
+      grid-template-columns: 1fr;
+    }
+    &__content-title {
+      font-size: 18px;
+    }
+    &__content-subtitle--after {
+      font-size: 18px;
+    }
+    &__content-subtitle--after a {
+      margin-top: 0;
+    }
+  }
   .about {
     padding-bottom: 0;
     &__card {
@@ -443,9 +517,49 @@
       padding: 20px;
     }
   }
+  .feedback-ad {
+    margin-top: 20px;
+  }
   .footer {
     &__wrapper {
       flex-wrap: wrap;
+    }
+  }
+  .auth {
+    padding-top: 100px;
+    &__title {
+      font-size: 20px;
+      margin-top: 32px;
+    }
+    &__input,
+    &__input:focus {
+      width: 288px;
+      padding: 20px;
+    }
+  }
+  .checkin {
+    &__title {
+      font-size: 20px;
+      margin-top: 32px;
+    }
+    &__input {
+      padding: 20px;
+      &::placeholder {
+        font-size: 16px;
+      }
+    }
+    &__checkbox {
+      width: 24px;
+      height: 24px;
+    }
+    #checkin__agree-span {
+      margin-bottom: 0;
+    }
+    &__agree {
+      align-items: center;
+    }
+    &__checkbox-label {
+      font-size: 16px;
     }
   }
 }
